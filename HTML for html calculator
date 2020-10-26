@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel = "stylesheet" href ="style.css"/>
+    </head>
+    <body>
+        <form name = "calculator">
+        <div>
+            <input type = "text" name = "addNumOne"/>
+            <button id = "add" type = "button">+</button>
+            <input type = "text" name = "addNumTwo"/>
+        </div>
+
+        <div>
+            <input type = "text" name = "subNumOne"/>
+            <button id="subtract" type = "button">-</button>
+            <input type = "text" name = "subNumTwo"/>
+
+
+        </div>
+
+        <div >
+            <input type = "text" name = "mulNumOne"/>
+            <button id = "multiply" type = "button">x</button>
+            <input type = "text" name = "mulNumTwo"/>
+
+
+
+        </div>
+        <p></p>
+
+        <script src="main.js"></script>
+        </form>
+    </body> 
+</html>

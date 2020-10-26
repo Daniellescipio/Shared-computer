@@ -1,0 +1,30 @@
+body {
+    background-color: chartreuse;
+    align-content: center;
+}
+
+#addition{
+padding: 50px;
+position: relative;
+left: 30%;    
+
+}
+
+#sub{
+    padding: 50px;
+    position: relative;
+    left: 30%;    
+    
+}
+
+#mul{
+padding: 50px;
+position: relative;
+left: 30%;    
+
+}    
+
+#answer{
+    text-align: center;
+    position: relative;   
+}

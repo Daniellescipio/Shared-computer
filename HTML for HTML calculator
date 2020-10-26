@@ -1,0 +1,57 @@
+const form = document["calculator"]
+const addNumOne = form.addNumOne
+const addNumTwo = form.addNumTwo
+const subNumOne = form.subNumOne
+const subNumTwo = form.subNumTwo
+const mulNumOne = form.mulNumOne
+const mulNumTwo = form.mulNumTwo
+
+const addButton = document.getElementById("add")
+const subButton = document.getElementById("subtract")
+const mulButton = document.getElementById("multiply")
+let answer = document.createElement("p")
+answer.textContent = "The Answer is:"
+document.getElementsByTagName("body")[0].append(answer)
+
+addButton.addEventListener("click", function(e){
+    e.preventDefault()
+    let sum = add(addNumOne.value, addNumTwo.value)
+       
+        answer.textContent = `The answer is ${sum}`
+        addNumOne.value = ""
+        addNumTwo.value = ""
+} )
+
+subButton.addEventListener("click", function(e){
+    e.preventDefault()
+    let diff = sub(subNumOne.value, subNumTwo.value)
+       
+        answer.textContent = `The answer is ${diff}`
+        subNumOne.value = ""
+        subNumTwo.value = ""
+} )
+
+mulButton.addEventListener("click", function(e){
+    e.preventDefault()
+    let prdct = mul(mulNumOne.value, mulNumTwo.value)
+       
+        answer.textContent = `The answer is ${prdct}`
+        mulNumOne.value = ""
+        mulNumTwo.value = ""
+} )
+
+function add(numOne, numTwo){
+   let sum = parseInt(numOne) + parseInt(numTwo)
+    return sum
+}
+
+function sub(numOne, numTwo){
+    let diff = numOne - numTwo
+   
+     return diff
+ }
+
+ function mul(numOne, numTwo){
+    let prdct = numOne * numTwo
+     return prdct
+ }

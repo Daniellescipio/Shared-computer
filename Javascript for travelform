@@ -1,0 +1,21 @@
+const form = document["travel"]
+let firstName = form.firstName
+let lastName = form.lastName
+let age = form.age
+let gender = form.gender
+let whereTo = form.whereTo
+let diet = form.diet
+
+form.addEventListener("submit", function(e){
+    e.preventDefault()
+    let dietChoice=[]
+    for(i = 0; i < diet.length; i++){
+        if(diet[i].checked){
+            dietChoice.push(diet[i].value)
+        }
+    }
+    
+  
+    alert(`First Name: ${firstName.value}\nLastName: ${lastName.value} \nAge: ${age.value} \ngender: ${gender.value}  \nLocation: ${whereTo.value} \nDiet: ${dietChoice} `)
+})
+

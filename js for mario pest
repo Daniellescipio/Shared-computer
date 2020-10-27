@@ -1,0 +1,47 @@
+const form = document["baddieCounter"]
+let numberOfGoombas = form.goombaNum
+let numberOfBobombs = form.bobombNum
+let numberOfCheeps = form.cheepNum
+const totalButton = form.totalButton
+const goombaButton = form.howManyGoombas
+const bobombButton = form.howManyBobombs
+const cheepButton = form.howManyCheeps
+
+goombaButton.addEventListener("click", function(e){
+    e.preventDefault()
+    let goombasPrice = parseInt(numberOfGoombas.value) * 5
+    let goombasPriceDisplay = document.getElementById("goombaWantedFor")
+    goombasPriceDisplay.textContent = `${goombasPrice} coins for ${numberOfGoombas.value} Goombas`
+
+})
+bobombButton.addEventListener("click", function(e){
+    e.preventDefault()
+    let bobombPrice = parseInt(numberOfBobombs.value) * 7
+    let bobombPriceDisplay = document.getElementById("bobombWantedFor")
+    console.log(bobombPrice)
+    bobombPriceDisplay.textContent = `${bobombPrice} coins for ${numberOfBobombs.value} Bob-oms`
+
+})
+cheepButton.addEventListener("click", function(e){
+    e.preventDefault()
+    let cheepPrice = parseInt(numberOfCheeps.value) * 11
+    let cheepPriceDisplay = document.getElementById("cheepWantedFor")
+    cheepPriceDisplay.textContent = `${cheepPrice} coins for ${numberOfCheeps.value} Cheep-Cheeps`
+
+})
+
+totalButton.addEventListener("click", function(e){
+    e.preventDefault()
+   let total =  addBaddies(numberOfGoombas.value, numberOfBobombs.value, numberOfCheeps.value)
+   const totalDisplay = document.getElementsByTagName("span")[0]
+   totalDisplay.textContent = total
+   console.log(total)
+})
+
+function addBaddies(...num){
+    let goombaTotal = parseInt(num[0]) * 5
+    let bobombTotal = parseInt(num[1]) * 7
+    let cheepTotal = parseInt(num[2]) * 11
+    let sum = goombaTotal +bobombTotal + cheepTotal
+    return sum
+}

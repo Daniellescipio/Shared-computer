@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel = "stylesheet" href ="style.css"/>
+    </head>
+    <body>
+        <H1>Welcome to Fantasy Airlines!</H1>
+        <form name = "travel" id = "travel">
+
+            <p>Tell us About Yourself</p>
+            <label for = "firstName">First Name</label>
+            <input type = "text" name = "firstName"/>
+            <br>
+            <label for = "lastName">Last Name</label>
+            <input type = "text" name = "lastName"/>
+            <br>
+            <label for = "age">Age</label>
+            <input type = "number" name = "age"/>
+            <br>
+            <label for = "gender">Gender</label>
+            <br>
+            FEMALE<input type = "radio" name = "gender" value = "female"/>
+            MALE<input type = "radio" name = "gender" value = "male"/>
+            <p>Great, nice to meet you!</p>
+            <P>Where are you headed?</P>
+            <select name = "whereTo">
+                <option value = "narnia">Narnia</option>
+                <option value = "hogwarts">Hogwarts</option>
+                <option value = "pandora">Pandora</option>
+            </select>
+            <p>One last thing...</p>
+            <label for = "diet">Diet</label>
+            <br>
+            <input type = "checkbox" value = "carnivore" name = "diet"/>Carnivore
+            <br>
+            <input type = "checkbox" value = "omnivore" name = "diet"/>Omnivore
+            <br>
+            <input type = "checkbox" value = "herbivore" name = "diet"/>Herbivore
+            <br>
+            <button name = "submit" >Ready To Go</button>
+
+
+
+
+        
+        </form>
+        <script src="main.js"></script>
+    </body> 
+</html>

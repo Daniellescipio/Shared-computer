@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mario Pest Control</title>
+        <link rel = "stylesheet" href ="style.css"/>
+    </head>
+    <body>
+        <H1>Mario Pest Control</H1>
+        <form name = "baddieCounter" id = "baddieCounter">
+            <div id = "goombas">
+                <h2>Goombas</h2>
+                <img src = picture/goomba.png alt = "Goomba" width= "100px" height= "100px"> 
+                <br>
+                <label for = "goombaNum">How Many Goombas Did you catch?</label>
+                <br>
+                <input type = "number" name = "goombaNum" value = "0">
+                <p id = "goombaWantedFor">5 coins for a goomba</span></p>
+                <button name = "howManyGoombas" type="button">Goomba Total</button>
+            </div>
+            <div id = "bobombs">
+                <h2>Bob-ombs</h2>
+                <img src = picture/bobombs.png alt = "Bob-oms" width= "100px" height= "100px"> 
+                <br>
+                <label for = "bobombNum">How Many Bob-oms Did you catch?</label>
+                <br>
+                <input type = "number" name = "bobombNum" value = "0">
+                <p id = "bobombWantedFor">7 coins for a Bob-omb</p>
+                <button name = "howManyBobombs" type ="button">Bob-omb Total</button>
+            </div>
+            <div id = "cheepCheep">
+                <h2>Cheep-Cheep</h2>
+                <img src = picture/cheepcheep.png alt = "cheepCheep" width= "100px" height= "100px"> 
+                <br>
+                <label for = "cheepNum">How Many Cheep-Cheeps Did you catch?</label>
+                <br>
+                <input type = "number" name = "cheepNum" value = "0">
+                <p id = "cheepWantedFor">11 coins for a Cheep-Cheep</p>
+                <button name = "howManyCheeps" type="button">Cheep-Cheep Total</button>
+            </div>
+            <button id = "totalButton" type = "button">Ready For My Money</button>
+            <p id = "total">TOTAL: <span></span></p>
+        </form>
+        
+
+        <script src="main.js"></script>
+    </body> 
+    <footer id = "extras">
+        <p id = "email">Contact us: MarioMario@controlmypest.com</p>
+        <p id = "website">Visit us: ControlMyPest.com</p>
+        <p id = "address">No really, Visit me!: 5619 Luigi Way 9m76p5, Mushroom Kingdom</p>
+
+    </footer>
+</html>

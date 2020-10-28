@@ -1,0 +1,34 @@
+button{
+    width: 230px;
+    height: 230px;
+    margin: 30px;
+}
+
+#sadButton{
+    background-image: url(pictures/sadFace.png);
+    grid-column: 4/5;
+
+}
+#happyButton{
+    background-image: url(pictures/hapFace.png);
+    grid-column: 2/3;
+
+}
+#happyCount{
+    grid-column: 2/3 ;
+}
+#sadCount{
+    grid-column: 4/5;
+}
+#buttons{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    align-content: center;
+    
+}
+body{
+    text-align: center;
+}
+#total{
+    grid-column:3/4;
+}
